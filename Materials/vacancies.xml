@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<vacancies>
+  <vacancy>
+    <id>1</id>
+    <posted>2015</posted>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima, ab alias. Officia cum alias, eos adipisci minus, laboriosam nihil voluptas. Modi, aliquam, esse. Aliquam quia illo, id labore corrupti?</description>
+    <location>Shanghai</location>
+  </vacancy>
+  <vacancy>
+    <id>2</id>
+    <posted>2011</posted>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima, ab alias. Officia cum alias, eos adipisci minus, laboriosam nihil voluptas. Modi, aliquam, esse. Aliquam quia illo, id labore corrupti?</description>
+    <location>Shanghai</location>
+  </vacancy>
+  <vacancy>
+    <id>3</id>
+    <posted>2017</posted>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima, ab alias. Officia cum alias, eos adipisci minus, laboriosam nihil voluptas. Modi, aliquam, esse. Aliquam quia illo, id labore corrupti?</description>
+    <location>Beijing</location>
+  </vacancy>
+  <vacancy>
+    <id>4</id>
+    <posted>2011</posted>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima, ab alias. Officia cum alias, eos adipisci minus, laboriosam nihil voluptas. Modi, aliquam, esse. Aliquam quia illo, id labore corrupti?</description>
+    <location>Hangzhou</location>
+  </vacancy>
+</vacancies>

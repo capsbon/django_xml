@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+<div id="myAlert" class="alert alert-success">
+	<a href="#" class="close" data-dismiss="alert">&times;</a>
+	<strong>数据库已成功更新！</strong>
+</div>
+<table  class="table table-bordered table-hover" style="width:70%">
+    <thead>
+    <tr>
+        <th style='text-align: center;'>id</th>
+        <th style='text-align: center;'>posted</th>
+        <th style='text-align: center;'>description</th>
+        <th style='text-align: center;'>location</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for v in vacancies %}
+
+    <tr >
+        <td style="width:20%" align="center">{{ v.id }}</td>
+        <td style="width:10%" align="center">{{ v.posted }}</td>
+        <td style="width:60%" align="center">{{ v.description }}</td>
+        <td style="width:10%" align="center">{{ v.location }}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+
+
+</body>
+{% endblock %}

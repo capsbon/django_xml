@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Vacancies</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand"  href="/vacancies">Vacancies</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+                {% if user.is_authenticated %}
+
+     			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					{{user.username }}
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/vacancies/logout">Logout</a></li>
+				</ul>
+			</li>
+        {% else %}
+            <li><a >
+         未登录
+            </a></li>
+        {% endif %}
+            <li><a href="/vacancies/export">
+         export
+            </a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

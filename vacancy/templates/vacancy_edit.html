@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<body>
+
+<form  method="post" role="form">
+    {% csrf_token %}
+  <div class="form-group">
+      <div class="col-md-3">
+      <label for="id">id</label>
+      <input type="text" class="form-control" name="id" value="{{v.id}}" disabled>
+      </div><br><br><br><br>
+      <div class="col-md-3">
+      <label for="posted">posted</label>
+      <input type="text" class="form-control" name="posted" value="{{v.posted}}">
+      </div><br><br><br><br>
+      <div class="col-md-3">
+    <label for="description">description</label>
+    <textarea class="form-control" rows="5" name = "description">{{v.description}}</textarea>
+          </div><br><br><br><br><br><br><br><br>
+      <div class="col-xs-3">
+      <label for="location">location</label>
+      <input type="text" class="form-control" value="{{v.location}}" name = "location"></div>
+      </div><br><br><br><br>
+      <div class="form-group">
+    <div class="col-sm-offset-1 col-sm-10">
+      <button type="submit" class="btn btn-default">提交</button>
+    </div>
+  </div>
+</form>
+
+</body>
+{% endblock %}
