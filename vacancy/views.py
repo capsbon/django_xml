@@ -29,6 +29,8 @@ def vacancy_edit(request, id):
     if request.method == "POST":
         v = Vacancies.objects.get(id=id)
         v.posted = request.POST.get('posted')
+        v.description = request.POST.get('description')
+        v.location = request.POST.get('location')
         v.save()
         vacancies_data = Vacancies.objects.all()
         context = {

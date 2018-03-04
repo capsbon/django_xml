@@ -1,0 +1,4 @@
+django==2.0.2
+PyMySQL==0.8.0
+lxml==3.7.1
+
